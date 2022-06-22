@@ -11,11 +11,22 @@
     margin-top: -16px;
     flex-direction: column;
 }
+
+.navHeader .contenedorPrincipalHeader {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 12px 0px 16px;
+    width: 100%;
+}
+
 .navHeader .contenedorPrincipalHeader .fase1{
     display: flex;
     align-items: center;
     flex-direction: row;
 }
+
 .navHeader .contenedorPrincipalHeader .fase1 .logo {
     width: 24px;
     height: 24px;
@@ -212,30 +223,3 @@ main section img{
         cursor: pointer;
     }
 }
-/* @media  screen and (min-width:650px) and (max-width:890px) {
-    .banner-politicas {
-        width: 70%;
-        padding-right: 10%;
-    }
-}
-
-@media screen and (max-width:649px ) {
-    header nav .banner {
-        flex-direction: column;
-    }
-    .banner-politicas {
-        width: 100% !important;
-    }
-    .banner-politicas {
-        width: 70%;
-        padding-right: 10%;
-    }
-    .banner .btn-aceptar {
-        width: 80px;
-        margin: auto;
-        margin-top: -15px;
-    }
-    .banner-politicas p {
-        margin-right: 24px;
-    }
-} */
