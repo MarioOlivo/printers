@@ -435,3 +435,80 @@ img.iconos-img-crecer {
     border-radius: 48px;
     border-color: rgb(118, 118, 118);
 }
+
+.form-loging {
+display: none;
+position: fixed;
+border:  solid 1px;
+bottom: 0;
+right: 15px;
+z-index: 9;
+}
+
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+.form-container .top{
+font-size:large;
+text-align: center;
+}
+
+.form-container .center{
+font-size: medium;
+text-align: center;
+font-weight: normal;
+}
+
+.form-container .bottom{
+font-size: smaller;
+text-align: left;
+font-weight: normal;
+}
+
+.form-container .Google {
+background-color: white;
+color: black;
+padding: 16px 20px;
+border: 1px black solid;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+border-radius: 25px;
+font-weight: bold;
+text-align: left;
+font-size: medium;
+}
+
+.form-container .Facebook {
+background-color: blue;
+color: white;
+font-weight: bold;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+border-radius: 25px;
+font-weight: bold;
+text-align: left;
+font-size: medium;
+}
+
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+.form-container .Google img{
+width: 55px;
+height: 25px;
+}
+
+.form-container .Facebook img{
+width: 55px;
+height: 25px;
+}

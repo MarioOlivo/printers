@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
-        function llamarMenu() {
-            var status = document.getElementById("popout").style.display;
-            if(status == "none") {
-                $("#popout").css("display", "flex");
-            } else {
-                $("#popout").css("display", "none");
-            }
-        }
-    </script>
+    <script src="JS/scripts.js"></script>
     <title>Pinterest</title>
 </head>
 <body>
@@ -23,7 +14,7 @@
         <div class="contenedorPrincipalHeader">
             <div class="fase1">
                 <div class="iconos">
-                    <img src="img/pinterest-svgrepo-com.svg" class="iconos-img" alt="" class="logo">
+                    <a href="https://www.pinterest.com.mx/"><img src="img/pinterest-svgrepo-com.svg" class="iconos-img" alt="" class="logo"></a>
                 </div>
             </div>
             <div class="fase2">
@@ -32,7 +23,7 @@
                 <a href="#">Seguidos</a>
             </div>
             <div class="fase2down">
-                <a href="#" class="btn-inicio-down">Inicio <img src="img/down_icon-icons.com_61209.svg" class="iconos-img-down" alt="Mensaje"></a>
+                <a href="#" class="btn-inicio-down">Inicio<img src="img/down_icon-icons.com_61209.svg" class="iconos-img-down" alt="Mensaje"></a>
             </div>
             <div class="search">
                 <div class="div-svg-lupa">
@@ -795,6 +786,19 @@
                 </div> 
             </div>
         </div>
+
+        <div class="form-loging" id="loging">
+            <form action="/action_page.php" class="form-container">
+              <h1 class="top">You are signed out</h1>
+              <h1 class="center">Sign in to get the best experience</h1>
+              <button type="button" class="Google"><img src="img/google.svg" class="icono-media" alt="google">Continue with Google</button>
+              <button type="button" class="Facebook"><img src="img/facebook.svg" class="icono-media" alt="google">Continue with Facebook</button>
+              <h1 class="bottom">By continuing, you agree to Pinterest's Terms of Service and acknowledge you've read our Privacy Policy</h1>
+              
+            </form>
+          </div>
     </main>
+    
+
 </body>
 </html>
