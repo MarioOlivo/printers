@@ -1,16 +1,19 @@
 *{
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 img{
     width: 100%;
 }
-
+body{
+    height: 100vh;
+    display: flex;
+}
 
 .navHeader {
     width: 100%;
     position: relative;
     display: flex;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 18px;
     font-weight: 700;
     position: fixed;
@@ -31,22 +34,25 @@ img{
 
 .navHeader .contenedorPrincipalHeader .fase1{
     display: flex;
-    align-items: center;
     flex-direction: row;
+    border: 10px solid white;
+    cursor: pointer;
+    padding-left: 24px;
 }
 
 .navHeader .contenedorPrincipalHeader .fase1 .logo {
-    width: 60px;
-    border: 16px solid white;
-    border-radius: 100px;
+    width: 20px;
+    height: 20px;
 }
-.navHeader .contenedorPrincipalHeader .fase1 .logo:hover{
-    border: 16px solid rgba(0, 0, 0, .1);
-    cursor: pointer;
-}
+
 .navHeader .contenedorPrincipalHeader .fase2{
     width: 300px;
 }
+
+.navHeader .contenedorPrincipalHeader .fase2{
+    width: 300px;
+}
+
 .navHeader .contenedorPrincipalHeader .fase2 a{
     -webkit-font-smoothing: antialiased;
     color: black;
@@ -75,6 +81,7 @@ img{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
+
 .corner {
     position: absolute;
     top: 10px;
@@ -89,7 +96,7 @@ img{
 .search {
     box-sizing: content-box;
     position: relative;
-    width: 58%;
+    width: 52%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -173,10 +180,163 @@ img{
 }
 
 
+.contenedor{
+    padding: 1rem;
+}
+.img-content{
+    position: relative;
+    overflow: hidden;
+}
+.img-content img{
+    width: 100%;
+}
+.contenedor:hover .texto{
+    display: flex;
+}
+.contenedor:hover .div-btn-down{
+    display: flex;
+}
+.contenedor:hover img {
+    opacity: .9;
+}
+.texto, .div-btn-down{
+    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 94%;
+    opacity: 0.9;
+    border-radius: 30px;
+    cursor: zoom-in;
+}
+.texto{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.div-btn-down {
+    background: rgba(0, 0, 0, .0);
+    justify-content: center;
+    align-items: end;
+    border-radius: 30px;
+}
+.texto h1{
+    padding: 16px 32px;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.iconos-d-crecer {
+    background: rgba(255,255,255,.6);
+    border-radius: 100px;
+    width: 150px;
+    height: 44px;
+}
+img.iconos-img-crecer {
+    height: 30px;
+    width: 100%;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.iconos-d-subir, .iconos-d-puntos,.iconos-d-crecer{
+    background: rgba(255,255,255,.6);
+    border-radius: 100px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: revert;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+  
+@media  screen and (min-width:997px) and (max-width:1150px){
+    .navHeader .contenedorPrincipalHeader .fase2 {
+        width: 380px;
+    }
+}
+@media  screen and (max-width:996px){
+    .navHeader .contenedorPrincipalHeader{
+        padding-left: 0px;
+        margin-left: -5px;
+    }
+    .navHeader .contenedorPrincipalHeader .fase1{
+        padding-left: 0px;
+    }
+    .fase2down{
+        display: flex;
+        text-decoration: none;
+        width: 200px;
+    }
+    a.btn-inicio-down {
+        text-decoration: none;
+    } 
+    .fase2{
+        display: none;
+    }
+    img.iconos-img-down {
+        width: 16px  !important;
+        height: 16px !important;
+    } 
+}
+@media screen and (max-width:572px){
+    .div-svg-lupa {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .search-2{
+        display: flex;
+        border: 10px solid white;
+    }
+    .search{
+        display: none;
+    }
+    .search-2:hover {
+        display: flex;
+        border-radius: 100px;
+        border-color: rgba(0, 0, 0, .0);
+        background-color: rgba(0, 0, 0, .1);
+        cursor: pointer;
+    }
+    
+}
+@media screen and (max-width:420px) {
+    .iconos{
+        display: none;
+    }
+    .down{
+        display: block;
+    }
+    .navHeader .contenedorPrincipalHeader .fase1 {
+        padding-left: 30px;
+    }
+
+}
+@media screen and (min-width:701px) and (max-width:900px){
+    .column{
+        flex: 30% !important;;
+    }
+}
+@media screen and (min-width:579px) and (max-width:700px){
+    .column{
+        flex: 50% !important;;
+    }
+}
+@media screen and (min-width: 50px) and (max-width: 580px){
+    .column {
+        flex: 100% !important;
+    }
+}
+
+
+
+/* Omar */
 .row{
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
+    margin-top: 50px;
   }
   
   .column{
@@ -185,7 +345,15 @@ img{
   }
   
   .column img{
-      margin-top: 5px;
+      margin-top: 10px;
+  }
+
+  .img-principal{
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
   }
 
   .column img:hover{
@@ -193,7 +361,7 @@ img{
 }
 
 
-  @media (max-width:479px){
+  /* @media (max-width:479px){
     .column{
         flex: 100%;
     }
@@ -234,4 +402,4 @@ img{
         opacity: 0;
       }
     
-  }
+  } */
