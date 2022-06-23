@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        function llamarMenu() {
+            var status = document.getElementById("popout").style.display;
+            if(status == "none") {
+                $("#popout").css("display", "flex");
+            } else {
+                $("#popout").css("display", "none");
+            }
+        }
+    </script>
     <title>Pinterest</title>
 </head>
 <body>
@@ -44,9 +55,28 @@
                 <div class="iconos letter">
                     <img src="img/m_letter_icon_212288.svg" alt="letter" class="iconos-img-l">
                 </div>
-                <div class="iconos down">
+                <div class="iconos down" onclick="llamarMenu()">
                     <img src="img/down_icon-icons.com_61209.svg" class="iconos-img" alt="Mensaje">
                  </div>
+            </div>
+        </div>
+        <div class="popout" id="popout">
+            <div class="acercade">
+                <span>Acerca de pinterest</span>
+            </div>
+            <div class="acercade">
+                <span>Ver condiciones y privacidad</span>
+            </div>
+            <div class="separacion">
+                <hr class="line">
+            </div>
+            <div class="solicitud">
+                <div class="solicitudes">
+                    <span>Dejar de ver solicitudes para iniciar sesión</span>
+                </div>
+                <div class="btnSolicitudes">
+                    <div class="activarcheck"></div>
+                </div>
             </div>
         </div>
     </header>

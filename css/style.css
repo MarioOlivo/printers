@@ -359,46 +359,79 @@ img.iconos-img-crecer {
     opacity: 0.3;
 }
 
-
-  /* @media (max-width:479px){
-    .column{
-        flex: 100%;
-    }
-    .search{
-        opacity: 0;
-    }
-    .fase2{
-        opacity: 0;
-    }
-    .inicio{
-        position: absolute;
-    }
+.popout {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 320px;
+    height: 50vh;
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 1px black;
+    border-color: white;
+    font-size: 14px;
+    top: 100%;
+    right: 3%;
+    background-color: white;
 }
-  
-  @media (max-width:600px){
-      .column{
-          flex: 100%;
-      }
-      .search{
-          opacity: 0;
-      }
-      .fase2{
-          justify-content: space-between;
-          position: absolute;
-      }
-  }
-  
-  
-  @media (max-width:1100px){
-      .column{
-          flex: 30%;
-      }
-      .fase2{
-        justify-content: space-between;
-        position: absolute;
-    }
-    .search{
-        opacity: 0;
-      }
-    
-  } */
+
+.popout .acercade {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.popout .separacion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.popout .separacion .line {
+    border-top: 1px solid;
+    width: 100%;
+}
+
+.popout .solicitud {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    margin-left: 12px;
+}
+
+.popout .solicitud .solicitudes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 230px;
+}
+
+.popout .acercade span {
+    width: max-content;
+}
+
+.popout .acercade span:hover {
+    border-bottom: 1px solid;
+    border-bottom-color: black;
+}
+
+.popout .solicitud .btnSolicitudes {
+    width: 40px;
+    height: 24px;
+    align-self: center;
+    border-style: solid;
+    border-width: 0.6667px;
+    border-radius: 48px;
+    border-color: rgb(118, 118, 118);
+}
+
+.popout .solicitud .btnSolicitudes .activarcheck {
+    width: 24px;
+    height: 24px;
+    border-style: solid;
+    border-width: 0.6667px;
+    border-radius: 48px;
+    border-color: rgb(118, 118, 118);
+}
